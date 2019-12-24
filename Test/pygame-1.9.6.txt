@@ -1,0 +1,33 @@
+$python -m pygame.tests
+pygame 1.9.6
+Hello from the pygame community. https://www.pygame.org/contribute.html
+skipping pygame.tests.cdrom_test (tag 'interactive')
+skipping pygame.tests.midi_test (tag 'interactive')
+skipping pygame.tests.touch_test (tag 'SDL1_ignore')
+loading pygame.tests.base_test
+loading pygame.tests.blit_test
+loading pygame.tests.bufferproxy_test
+loading pygame.tests.camera_test
+loading pygame.tests.color_test
+loading pygame.tests.compat_test
+loading pygame.tests.constants_test
+loading pygame.tests.cursors_test
+loading pygame.tests.display_test
+loading pygame.tests.draw_test
+loading pygame.tests.event_test
+loading pygame.tests.fastevent_test
+loading pygame.tests.font_test
+loading pygame.tests.freetype_test
+loading pygame.tests.ftfont_test
+loading pygame.tests.gfxdraw_test
+loading pygame.tests.image__save_gl_surface_test
+loading pygame.tests.image_test
+loading pygame.tests.imageext_test
+loading pygame.tests.joystick_test
+loading pygame.tests.key_test
+loading pygame.tests.mask_test
+loading pygame.tests.math_test
+loading pygame.tests.mixer_music_test
+malloc(): invalid size (unsorted)
+Aborted
+$
