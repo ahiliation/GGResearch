@@ -1,3 +1,5 @@
+# increase sleep time and line thickness
+
 import os
 import pygame
 import time
