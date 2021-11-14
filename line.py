@@ -12,7 +12,7 @@ GREEN = (  0, 255,   0)
 RED =   (255,   0,   0)
 
 
-size = [400, 300]
+size = [800, 600]
 screen = pygame.display.set_mode(size)
 
 #Loop until the user clicks the close button.
@@ -32,8 +32,8 @@ while not done:
  
 
     for i in range(250):
-        pygame.draw.line(screen, GREEN, [10, 100], [i,100], 1)
-        time.sleep(0.1)
+        pygame.draw.line(screen, GREEN, [10, 100], [i,100], 5)
+        time.sleep(0.01)
         pygame.display.flip()
 
 pygame.quit()
