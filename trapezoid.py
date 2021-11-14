@@ -33,11 +33,11 @@ while not done:
 
     for y in range(400):
         pygame.draw.aaline(screen, GREEN, [10, 200], [200,y], 1)
-        time.sleep(0.1)
+        time.sleep(0.01)
         pygame.display.flip()
     for x in range(200, -1, -1):
-        pygame.draw.aaline(screen, GREEN, [10, 200], [x,400], 1)
-        time.sleep(0.1)
+        pygame.draw.aaline(screen, RED, [10, 200], [x,400], 1)
+        time.sleep(0.01)
         if x == 10:
             break
         pygame.display.flip()
