@@ -35,7 +35,7 @@ while not done:
         c = 50
         m = 10
         y = m*x + c
-        pygame.draw.line(screen, BLUE, [300, 300], [x,y], 5)
+        pygame.draw.line(screen, BLUE, [300, 300], [x,y], 1)
         time.sleep(0.01)
         pygame.display.flip()
 
