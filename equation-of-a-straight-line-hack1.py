@@ -20,6 +20,15 @@ done = False
 clock = pygame.time.Clock()
 
 
+blockSize = 20 #Set the size of the grid block
+for x in range(0, 800, blockSize):
+    for y in range(0, 600, blockSize):
+        rect = pygame.Rect(x, y, blockSize, blockSize)
+        pygame.draw.rect(screen, WHITE, rect, 1)
+
+
+
+
 while not done:
  
     # This limits the while loop to a max of 10 times per second.
@@ -29,7 +38,10 @@ while not done:
     for event in pygame.event.get(): # User did something
         if event.type == pygame.QUIT: # If user clicked close
             done=True # Flag that we are done so we exit this loop
- 
+
+
+
+
 
     for y in range(400):
         c = 10
