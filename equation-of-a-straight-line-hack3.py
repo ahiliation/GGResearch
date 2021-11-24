@@ -54,7 +54,7 @@ while not done:
         print(x1,y1)
         # if y < 600:
         pygame.draw.line(screen, BLUE, [x1, y1], [x,y], 1)
-        time.sleep(0.1)
+        time.sleep(0.01)
         pygame.display.flip()
        
 
