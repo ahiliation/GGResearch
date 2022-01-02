@@ -59,7 +59,7 @@ while not done:
         print(x1,y1)
         # if y < 600:
         pygame.draw.line(screen, BLUE, [x1, y1], [x,y], 1)
-        time.sleep(0.01)
+        time.sleep(0.1)
         pygame.draw.circle(screen, RED, (midx,midy), 20) # Here <<<
       #  m = (y1 - y)/(x1 - x)
         pygame.display.flip()
