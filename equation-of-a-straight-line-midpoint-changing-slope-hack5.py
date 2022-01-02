@@ -43,13 +43,16 @@ while not done:
 
 
 
-    m = 100
+    
     while True:
-        c = 10
+        c = random.randint(1,50)
         x = random.randint(1,800)
         y = random.randint(1,600)
-        y1 = m*x + c
-        x1 = (y - c)/m
+#        y1 = m*x + c
+#        x1 = (y - c)/m
+        x1 = random.randint(1,800)
+        y1 = random.randint(1,600)
+
         midx = (x+x1)/2
         midy = (y+y1)/2
         print(x,y)
@@ -58,7 +61,7 @@ while not done:
         pygame.draw.line(screen, BLUE, [x1, y1], [x,y], 1)
         time.sleep(0.01)
         pygame.draw.circle(screen, RED, (midx,midy), 20) # Here <<<
-        m = (y1 - y)/(x1 - x)
+      #  m = (y1 - y)/(x1 - x)
         pygame.display.flip()
        
 
