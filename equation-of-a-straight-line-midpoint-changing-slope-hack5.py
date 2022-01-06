@@ -28,7 +28,7 @@ clock = pygame.time.Clock()
 #        pygame.draw.rect(screen, WHITE, rect, 1)
 
 
-
+count = 0
 
 while not done:
  
@@ -41,10 +41,12 @@ while not done:
             done=True # Flag that we are done so we exit this loop
 
 
-
-
-    
-    while True:
+#    count = 0
+    while (count < 21):
+       
+#    for draw in range(26):
+#    while True:
+        count = count + 1
         c = random.randint(1,50)
         x = random.randint(1,800)
         y = random.randint(1,600)
@@ -58,6 +60,10 @@ while not done:
         print(x,y)
         print(x1,y1)
         # if y < 600:
+#        print ("hello")
+        print (count)
+#        if draw > 20:
+#            break
         pygame.draw.line(screen, BLUE, [x1, y1], [x,y], 1)
         time.sleep(0.1)
         pygame.draw.circle(screen, RED, (midx,midy), 20) # Here <<<
