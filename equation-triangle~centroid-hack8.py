@@ -42,11 +42,11 @@ while not done:
 
 
 #    count = 0
-    while (count <  21):
+#    while (count <  21):
        
 #    for draw in range(26):
-#    while True:
-        count = count + 1
+    while True:
+#        count = count + 1
 #        c = random.randint(1,50)
         x1 = random.randint(1,300)
         y1 = random.randint(1,300)
@@ -79,6 +79,8 @@ while not done:
         pygame.draw.circle(screen, BLUE, (cx,cy), 10) 
       #  m = (y1 - y)/(x1 - x)
         pygame.display.flip()
+        time.sleep(0.1)
+        screen.fill((BLACK))
        
 
 pygame.quit()
