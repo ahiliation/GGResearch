@@ -14,9 +14,9 @@ p1, p2, p3 = Point(0, 0), Point(100, 100), Point(100, 100)
 
 l1 = Line(p1, p2)
 
-p1 = plot(x*x, show=False)
-p2 = plot(x, show=False)
-p3 = plot(3*x, show=False)
+p1 = plot(x, show=False)
+p2 = plot(x +5, show=False)
+#p3 = plot(x +10, show=False)
 p1.append(p2[0])
 
 
@@ -25,6 +25,9 @@ l2 = l1.parallel_line(p3)
 
 # checking l2 is parallel to l1 using is_parallel() method
 isParallel = l1.is_parallel(l2)
-
+print(l2)
+#print(dir(l2))
 print(isParallel)
+p1.show()
+p2.show()
 p3.show()
