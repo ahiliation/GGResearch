@@ -14,6 +14,8 @@ p1 = numpy.array((2,-3))
 p2 = numpy.array((10,y))
 expr1 = exp((10 - 2)**2 + (y - (-3))**2)
 
+#print(expr1)
+
 eq = Eq(expr1,100)
 sol = solve(eq)
 
