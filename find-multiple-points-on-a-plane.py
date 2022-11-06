@@ -2,11 +2,14 @@ import os
 import time
 import math 
 import numpy
-from sympy import symbols, exp, solve, Eq
+from sympy import Symbol, var
+from sympy.solvers import solve, solveset, S
+from sympy import  exp, Eq
 from colorama import Fore, Back, Style 
 
 #x = symbols('x')
-y = symbols('y')
+y = Symbol('y')
+#y = var('y', real=True)
 #p1, p2, p3 = Point(0, 0), Point(100, 100), Point(100, 100)
 
 
@@ -16,8 +19,10 @@ expr1 = exp((10 - 2)**2 + (y - (-3))**2)
 
 #print(expr1)
 
-eq = Eq(expr1,100)
-sol = solve(eq)
+eq = Eq(expr1 - 100,0)
+#print(eq)
+
+sol = solveset(eq, y, domain=S.Complexes)
 
 print(sol)
 
