@@ -2,11 +2,13 @@ import os
 import time
 import math 
 import numpy
-from sympy import symbols, exp, solve, Eq
+from sympy.solvers import solve
+from sympy import Symbol
+from sympy import exp, Eq
 from colorama import Fore, Back, Style 
 
 #x = symbols('x')
-x= symbols('x')
+x= Symbol('x')
 #p1, p2, p3 = Point(0, 0), Point(100, 100), Point(100, 100)
 
 
@@ -19,7 +21,7 @@ p3 = numpy.array((-2,9))
 expr1 = exp((2 - x)**2 + (-5 - 0)**2)
 expr2 = exp((-2 -x)**2 + (9 - 0)**2)
 
-eq = Eq(expr2,expr1)
+eq = Eq(expr2 - expr1,0)
 sol = solve(eq)
 print(sol)
 
