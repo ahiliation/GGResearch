@@ -3,7 +3,7 @@ import time
 import math 
 import numpy
 from sympy.solvers import solve
-from sympy import Symbol
+from sympy import Symbol, simplify
 from sympy import exp, Eq
 from colorama import Fore, Back, Style 
 
@@ -16,9 +16,11 @@ y= Symbol('y')
 expr1 = exp((x - 3)**2 + (y - 6)**2)
 expr2 = exp((x + 3)**2 + (y - 4)**2)
 
+#print(expr2)
 eq = Eq(expr2 - expr1,0)
 #sol = solve(eq)
-print(eq)
+smpl = simplify(eq)
+print("After Simplification : {}".format(smpl)) 
 
 
 
