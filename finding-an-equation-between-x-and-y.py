@@ -2,6 +2,7 @@ import os
 import time
 import math 
 import numpy
+import sympy
 from sympy.solvers import solve
 from sympy import Symbol, simplify
 from sympy import exp, Eq
@@ -15,8 +16,9 @@ y= Symbol('y')
 
 expr1 = exp((x - 3)**2 + (y - 6)**2)
 expr2 = exp((x + 3)**2 + (y - 4)**2)
+sympy.simplify(expr2)
 
-#print(expr2)
+print(expr2)
 eq = Eq(expr2 - expr1,0)
 #sol = solve(eq)
 smpl = simplify(eq)
