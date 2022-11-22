@@ -33,10 +33,5 @@ print("distance qr =", distance2)
 
 
 
-#if ((p1p2 ==  p3p4) and (p2p3 == p4p1) and (p1p3 != p2p4) and (p1p2 != p2p3) and (p3p4 != p4p1)) :
-#    print(Fore.BLACK, Back.WHITE + 'the given shape is a parallelogram')
-#print(Style.DIM + 'and in dim text')
-#    print(Style.RESET_ALL)
-
 
 
