@@ -18,8 +18,8 @@ p3 = numpy.array((-2,9))
 
 
 
-expr1 = exp((2 - x)**2 + (-5 - 0)**2)
-expr2 = exp((-2 -x)**2 + (9 - 0)**2)
+expr1 = (2 - x)**2 + (-5 - 0)**2
+expr2 = (-2 -x)**2 + (9 - 0)**2
 
 eq = Eq(expr2 - expr1,0)
 sol = solve(eq)
